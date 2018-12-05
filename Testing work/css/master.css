@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.display-1{
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.contain-search{
+  height: 200px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+}
+
+.searcher{
+  background-color: #a3271f;
+  height: 45px;
+  color: white;
+  border-radius: 2px;
+}
+
+.form-control{
+  display: inline-block;
+  width: 70%;
+}
+
+button{
+  background-color: #a3271f;
+  color: white;
+  width: 90%;
+  transition: all .5s ease-out;
+}
+
+button:hover{
+  background-color: #7a0404;
+}
+
+.btn:focus{
+  box-shadow: 0px 0px 3px 1px #a3271f;
+}
+
+.form-control:focus{
+  border-color: #a3271f;
+  box-shadow: 0px 0px 3px 1px #a3271f;
+}
+
+td a{
+  color: black;
+  position: relative;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.update, .delete{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.49);
+}
+
+.frame{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 40vh;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  box-shadow: -1px 1px 10px 3px #a8a8a8;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.delete .frame{
+  height: 30vh;
+}
+
+.haiden .btn{
+  width: 100%;
+}
+
+.hidden{
+  display: block;
+}
+
+@media only screen and (max-width: 1200px){
+  .hidden .frame{
+    width: 80%;
+  }
+}
